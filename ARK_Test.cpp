@@ -6,11 +6,12 @@
 
 using namespace std;
 
-void printMenu () ;
-void Info () ;
+void printMenu();
+void Info();
 
 // Function to shutdown the computer
-void shutDown(){
+void shutDown()
+{
 
 	// To clears the screen
 	system("cls");
@@ -25,7 +26,8 @@ void shutDown(){
 }
 
 // Function to restart the computer
-void reStart(){
+void reStart()
+{
 
 	// Clears the screen
 	system("cls");
@@ -37,7 +39,8 @@ void reStart(){
 }
 
 // Function to log off user
-void logOff(){
+void logOff()
+{
 
 	// To clears the screen
 	system("cls");
@@ -49,7 +52,8 @@ void logOff(){
 
 // Function to open manualShutdown
 // shutdown dialog box
-void manualShutdown(){
+void manualShutdown()
+{
 
 	// To clears the screen
 	system("cls");
@@ -58,7 +62,8 @@ void manualShutdown(){
 	system("C:\\WINDOWS\\System32\\shutdown /i");
 }
 
-void abortShutdown(){
+void abortShutdown()
+{
 
 	// To clears the screen
 	system("cls");
@@ -69,13 +74,15 @@ void abortShutdown(){
 
 // Function to take user choices and perform
 // the appropriate operation
-void selectMenu(){
+void selectMenu()
+{
 
 	int choice;
 	cout << ("\nSo What's it gonna be :: ");
 	cin >> choice;
 
-	switch (choice) {
+	switch (choice)
+	{
 	case 1:
 		shutDown();
 		break;
@@ -109,32 +116,34 @@ void selectMenu(){
 }
 
 // Function to print all the menus
-void printMenu(){
+void printMenu()
+{
 
-	Info () ;
+	Info();
 
 	// Create Menu
-	cout<< "S Y S T E M   C O N T R O L\n"
-		<< "1 :: Shutdown Computer\n"
-		<< "2 :: Restart Computer\n"
-		<< "3 :: Log off \n" 
-		<< "4 :: Manual Shutdown Settings\n"
-		<< "5 :: Abort Shutdown\n"
-		<< "6 :: Exit\n" ;
+	cout << "S Y S T E M   C O N T R O L\n"
+		 << "1 :: Shutdown Computer\n"
+		 << "2 :: Restart Computer\n"
+		 << "3 :: Log off \n"
+		 << "4 :: Manual Shutdown Settings\n"
+		 << "5 :: Abort Shutdown\n"
+		 << "6 :: Exit\n";
 
 	// Function call for select options
 	selectMenu();
 }
 
-void Info (){
+void Info()
+{
 
-	cout<< "Designed & Developed by Ͻ Y B E R O Ͷ I Ͻ\n"
-		<< "Copyright (C) Ark Corporation. All rights reserved.\n\n" ;
-
+	cout << "Designed & Developed by Ͻ Y B E R O Ͷ I Ͻ\n"
+		 << "Copyright (C) Ark Corporation. All rights reserved.\n\n";
 }
 
 // Driver Code
-int main(){
+int main()
+{
 
 	// Function Call
 	printMenu();
